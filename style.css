@@ -161,4 +161,100 @@
 
 
 /* Bottone 12 */
-.ex-12-button:hover{}
+.ex-12-button:hover > .ex-12-top-white{
+    animation: left-right-left 1s linear ;
+}
+
+.ex-12-button:hover > .ex-12-bottom-white{
+    animation: right-left 1s linear;
+}
+
+@keyframes left-right-left{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: 7%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+@keyframes right-left{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: 71%;
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+/* bottone 13 */
+
+.ex-13-button:hover > .ex-13-top-white{
+    animation: right-down 3s linear ;
+    animation-iteration-count:calc(2);
+}
+
+.ex-13-button:hover > .ex-13-bottom-white{
+    animation: left-up 3s linear;
+    animation-iteration-count:calc(2);
+}
+
+@keyframes right-down{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    20%{
+        left: 78%;
+        top: -10px;
+    }
+    40%{
+        left: 78%;
+        top: 50px;
+    }
+    60%{
+        left: -8%;
+        top: 50px;   
+    }
+    80%{
+        left: -8%;
+        top: -10%;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+@keyframes left-up{
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    20%{
+        right: 78%;
+        bottom: -10px;
+    }
+    40%{
+        right: 78%;
+        bottom: 50px;
+    }
+    60%{
+        right: -8%;
+        bottom: 50px;   
+    }
+    80%{
+        right: -8%;
+        bottom: -10%;
+    }
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
